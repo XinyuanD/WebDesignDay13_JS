@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Messabout</title>
+</head>
+<body>
+    <h2>Onclick events and alerts on an anchor</h2>
+    <a href="https://www.youtube.com/" target="_blank" onclick="alert('Warning! You are navigation away from the webpage')">YouTube Link</a>
+
+    <h2>Display and hide text</h2>
+    <h2>What's my secret identity?</h2>
+    <p id="secret"></p>
+    <button onclick="document.getElementById('secret').innerHTML='Spy';
+    document.getElementById('secret').style.display='block'">Reveal</button>
+    <button onclick="document.getElementById('secret').innerHTML=''">Hide</button>
+
+    <h2>Change an image with Javascript</h2>
+    <img id="myImage" src="images/bulb-on.jpg" width="20%">
+    <button onclick="document.getElementById('myImage').src='images/bulb-off.jpg'">Bulb Off</button>
+    <!-- individual challenge -->
+    <button onclick="document.getElementById('myImage').src='images/bulb-on.jpg'">Bulb On</button>
+
+    <h2>Change styles with a button</h2>
+    <p id="alice">Hi, my name is Alice</p>
+    <button onclick="document.getElementById('alice').style.color='blue';
+    document.getElementById('alice').style.fontSize='5px'">Eat Cake</button>
+    <button onclick="document.getElementById('alice').style.color='black';
+    document.getElementById('alice').style.fontSize='30px'">Drink Potion</button>
+
+    <!-- new style changes -->
+    <h2>Change font family and background</h2>
+    <p id="myFont" style="background-color: aqua;">Look at the font</p>
+    <button onclick="document.getElementById('myFont').style.fontFamily='arial'
+    document.getElementById('myFont').style.backgroundColor='orange'">Change text</button>
+    <button onclick="document.getElementById('myFont').style.fontFamily='times new roman'
+    document.getElementById('myFont').style.backgroundColor='aqua'">Revert Back</button>
+</body>
+</html>
